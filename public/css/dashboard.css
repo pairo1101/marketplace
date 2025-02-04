@@ -1,0 +1,32 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #f0fdf4; /* Light green */
+    color: #22543d; /* Dark green for text */
+    width: 25%; /* 1/4 of the page */
+}
+
+.content {
+    margin-left: 25%; /* Push content to the right of the sidebar */
+}
+
+.menu-item a {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.menu-item a:hover {
+    background-color: #c6f6d5; /* Light green hover */
+    color: #22543d; /* Darker green */
+}
+
+.logo img {
+    border-radius: 50%;
+    background-color: #c6f6d5; /* Light green */
+    padding: 0.5rem;
+}

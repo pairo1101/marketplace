@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f5f2;
+    color: #333;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header */
+h1 {
+    font-size: 2em;
+    color: #ff7a5c;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #6b705c;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+    margin-bottom: 20px; /* Space between fields */
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+    border-color: #ff7a5c;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    width: 100%;
+    background-color: #ff7a5c;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff9478;
+    transform: translateY(-2px);
+}
+
+button[type="submit"]:active {
+    background-color: #e85a50;
+    transform: translateY(1px);
+}
+
+/* Link styled as button */
+.btn-link {
+    display: inline-block;
+    background-color: #ff7a5c;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-link:hover {
+    background-color: #ff9478;
+    transform: translateY(-2px);
+}
+
+.btn-link:active {
+    background-color: #e85a50;
+    transform: translateY(1px);
+}
+
+/* Container for form */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button[type="submit"] {
+        font-size: 0.9rem;
+        padding: 10px 16px;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    input[type="text"] {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
