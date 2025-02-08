@@ -16,7 +16,7 @@ Route::get('/login', [AccountController::class, 'login'])->name('login');
 Route::post('/login', [AccountController::class, 'loginPost'])->name('loginPost');
 
 
-Route::middleware([CheckAuth::class])->group(function(){
+Route::middleware('CheckAuth')->group(function(){
     Route::get('/home/{user}', [AccountController::class, 'home'])->name('user.home');
     Route::get('/home/{user}/listingForm', [Listingcontroller::class, 'listingForm'])->name('user.listingForm');
     Route::post('/home/list', [Listingcontroller::class, 'postListing'])->name('user.list');
